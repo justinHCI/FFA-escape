@@ -60,7 +60,7 @@ h1 {
   font-size: .85rem;
 }
 
-.riddle { font-size: clamp(1.2rem, 1.8vw, 2rem); line-height: 1.6; }
+.riddle { font-size: clamp(1.1rem, 1.15vw, 1.6rem); line-height: 1.6; }
 
 textarea {
   display: block;
@@ -68,7 +68,7 @@ textarea {
   min-height: 6rem;
   padding: 1rem;
   font: inherit;
-  font-size: clamp(1.15rem, 1.6vw, 1.8rem);
+  font-size: clamp(1.1rem, 1.3vw, 1.6rem);
   line-height: 1.5;
   color: var(--green);
   background: #000;
