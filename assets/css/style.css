@@ -32,9 +32,9 @@ body {
 
 .stage {
   position: relative;
-  width: min(640px);
+  width: clamp(320px, 70vw, 1200px);
   margin: 2rem 0;
-  padding: 2rem;
+  padding: clamp(1.5rem, 3vw, 3.5rem);
   text-align: center;
   background: rgba(10, 0, 20, .85);
   border: 4px double var(--gold);
@@ -60,7 +60,7 @@ h1 {
   font-size: .85rem;
 }
 
-.riddle { font-size: 1.2rem; line-height: 1.6; }
+.riddle { font-size: clamp(1.2rem, 1.8vw, 2rem); line-height: 1.6; }
 
 textarea {
   display: block;
@@ -68,7 +68,7 @@ textarea {
   min-height: 6rem;
   padding: 1rem;
   font: inherit;
-  font-size: 1.15rem;
+  font-size: clamp(1.15rem, 1.6vw, 1.8rem);
   line-height: 1.5;
   color: var(--green);
   background: #000;
