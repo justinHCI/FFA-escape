@@ -1,6 +1,7 @@
 title: The Riddler's Remarkable Escape
 description: A tiny three-puzzle escape room demo
-baseurl: ""
+url: "https://justinhci.github.io"
+baseurl: "/FFA-escape"
 exclude:
   - README.md
   - Gemfile
