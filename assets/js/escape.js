@@ -33,7 +33,7 @@ document.querySelectorAll("form.puzzle").forEach(function (form) {
       setTimeout(function () { window.location.href = form.dataset.next; }, 800);
     } else {
       message.className = "message fail";
-      message.textContent = "Wrong! Mwahahaha! Try again, if you dare.";
+      message.textContent = "Wrong! You'll never escape! Try again, if you dare.";
       form.classList.remove("shake");
       void form.offsetWidth;
       form.classList.add("shake");
