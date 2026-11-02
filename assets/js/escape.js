@@ -2,6 +2,16 @@ document.querySelectorAll("form.puzzle").forEach(function (form) {
   var message = form.querySelector(".message");
   var answer = form.dataset.answer;
 
+  var box = form.querySelector("textarea");
+  if (box) {
+    box.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        form.requestSubmit();
+      }
+    });
+  }
+
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     var correct;
@@ -13,7 +23,7 @@ document.querySelectorAll("form.puzzle").forEach(function (form) {
         .join(",");
       correct = picked === answer.split(",").sort().join(",");
     } else {
-      var guess = form.querySelector("input[type=text]").value.trim().toLowerCase();
+      var guess = form.querySelector("textarea").value.trim().toLowerCase();
       correct = guess === answer;
     }
 
