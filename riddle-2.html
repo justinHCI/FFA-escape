@@ -1,0 +1,27 @@
+---
+layout: default
+title: Riddle Two
+heading: Not So Fast!
+progress: "Riddle 2 of 3"
+permalink: /riddle-2/
+---
+<p class="riddle">
+  Ha! You cracked the first one. Beginner's luck!<br>
+  <strong>But have you been paying attention at FFA? Which topics have we learned about?</strong>
+</p>
+
+<form class="puzzle" data-type="checkbox" data-answer="correct1,correct2,correct3,correct4" data-next="{{ '/riddle-3/' | relative_url }}">
+  <fieldset>
+    <legend class="sr-only">Choose your answers</legend>
+    <label><input type="checkbox" value="incorrect1"> Coursezilla</label>
+    <label><input type="checkbox" value="correct1"> CourseDog</label>
+    <label><input type="checkbox" value="incorrect2"> CourseCat</label>
+    <label><input type="checkbox" value="correct2"> Service Learning</label>
+    <label><input type="checkbox" value="incorrect3"> Serval Learning</label>
+    <label><input type="checkbox" value="correct3"> FAWN</label>
+    <label><input type="checkbox" value="correct4"> COIL</label>
+    <label><input type="checkbox" value="incorrect4"> FRED</label>
+  </fieldset>
+  <button type="submit">Submit</button>
+  <p class="message" role="alert"></p>
+</form>

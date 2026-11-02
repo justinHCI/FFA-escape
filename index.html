@@ -1,0 +1,19 @@
+---
+layout: default
+title: Riddle One
+heading: Welcome, Little Detective
+progress: "Riddle 1 of 3"
+---
+<p class="riddle">
+  My first and second letters are something you wouldn't want in college.<br>
+  But my third letter and full name are something you would want in college.<br>
+  You are here, we are all here.<br>
+  <em>What am I?</em>
+</p>
+
+<form class="puzzle" data-type="text" data-answer="ffa" data-next="{{ '/riddle-2/' | relative_url }}">
+  <label for="answer" class="sr-only">Your answer</label>
+  <input id="answer" type="text" placeholder="Type your answer here, if you dare..." autocomplete="off">
+  <button type="submit">Submit</button>
+  <p class="message" role="alert"></p>
+</form>

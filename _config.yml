@@ -1,0 +1,7 @@
+title: The Riddler's Remarkable Escape
+description: A tiny three-puzzle escape room demo
+baseurl: ""
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
